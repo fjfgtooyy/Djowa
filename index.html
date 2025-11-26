@@ -1,19 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Djowafreedoom — Free AI Services and Site Links</title>
-  <meta name="description" content="A curated list of free AI services and directories to help creators, developers, and small teams prototype without cost." />
+  <meta name="description" content="A curated list of free AI services and directories to help creators, developers, and small teams prototype without cost.">
   <style>
-    body { font-family: system-ui, Arial, sans-serif; background:#f6f7fb; color:#111; margin:0; padding:24px; }
-    .container { max-width:900px; margin:0 auto; background:#fff; padding:28px; border-radius:10px; box-shadow:0 8px 30px rgba(12,20,40,0.06); }
-    header { border-bottom:1px solid #eef2ff; padding-bottom:12px; margin-bottom:18px; }
-    h1 { color:#0b5cff; margin:0 0 6px 0; }
-    a { color:#0b5cff; text-decoration:none; }
-    ul { margin:12px 0 18px 20px; }
-    footer { font-size:0.9rem; color:#555; margin-top:20px; }
-    .note { background:#fff8e6; padding:10px; border-radius:6px; border:1px solid #ffecb5; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f6f7fb;
+      color: #111;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(12, 20, 40, 0.06);
+    }
+    
+    header {
+      border-bottom: 1px solid #eef2ff;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    
+    h1 {
+      color: #0b5cff;
+      margin: 0 0 10px 0;
+      font-size: 2.2rem;
+    }
+    
+    h2 {
+      color: #0b5cff;
+      margin: 25px 0 15px 0;
+      font-size: 1.5rem;
+      border-bottom: 1px solid #eef2ff;
+      padding-bottom: 8px;
+    }
+    
+    a {
+      color: #0b5cff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    
+    a:hover {
+      color: #0044cc;
+      text-decoration: underline;
+    }
+    
+    ul {
+      margin: 12px 0 18px 25px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    footer {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eef2ff;
+    }
+    
+    .note {
+      background: #fff8e6;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ffecb5;
+      margin: 20px 0;
+    }
+    
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 25px 0;
+    }
+    
+    .tool-card {
+      border: 1px solid #eef2ff;
+      border-radius: 8px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .tool-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    }
+    
+    .tool-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    
+    .tool-name {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #0b5cff;
+    }
+    
+    .tool-rating {
+      color: #ffa500;
+      font-size: 0.9rem;
+    }
+    
+    .tool-category {
+      display: inline-block;
+      background: #eef2ff;
+      color: #0b5cff;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    
+    .tool-description {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    
+    .tool-link {
+      display: inline-block;
+      background: #0b5cff;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    
+    .tool-link:hover {
+      background: #0044cc;
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -22,6 +175,83 @@
       <h1>Djowafreedoom — Free AI Services and Site Links</h1>
       <p>Curated links to free AI directories, APIs, and tools to help you get started fast.</p>
     </header>
+
+    <section>
+      <h2>Featured Free AI Tools (Most Recent)</h2>
+      <p>Hand-picked free AI tools updated regularly to help you find the best resources for your projects.</p>
+      
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-name">Paragraph Rewriter- Write Paper</div>
+            <div class="tool-rating">★ 5</div>
+          </div>
+          <div class="tool-category">Paraphraser</div>
+          <div class="tool-description">AI tool that rephrases text while maintaining original meaning. It enhances clarity and style.</div>
+          <a href="https://writepaper.com/paragraph-rewriter" class="tool-link" target="_blank">Visit Tool</a>
+        </div>
+        
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-name">Plagiarism Checker- Essaypro</div>
+            <div class="tool-rating">★ 5</div>
+          </div>
+          <div class="tool-category">Writing</div>
+          <div class="tool-description">Detects potential plagiarism in documents up to 3,000 words, supporting various file formats.</div>
+          <a href="https://essaypro.com/plagiarism-checker" class="tool-link" target="_blank">Visit Tool</a>
+        </div>
+        
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-name">AIFreeBox</div>
+            <div class="tool-rating">★ 5</div>
+          </div>
+          <div class="tool-category">AI Assistant</div>
+          <div class="tool-description">A platform offering over 500 AI tools for content creation. It enables users to generate various content types.</div>
+          <a href="https://aifreebox.com" class="tool-link" target="_blank">Visit Tool</a>
+        </div>
+        
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-name">AI YouTube Title Generator- PackaPop</div>
+            <div class="tool-rating">★ 5</div>
+          </div>
+          <div class="tool-category">Content creation</div>
+          <div class="tool-description">A free tool that generates engaging, data-driven video titles optimized for YouTube.</div>
+          <a href="https://packapop.com/pages/youtube-title-generator" class="tool-link" target="_blank">Visit Tool</a>
+        </div>
+        
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-name">Tarota AI</div>
+            <div class="tool-rating">★ 5</div>
+          </div>
+          <div class="tool-category">Inspiration</div>
+          <div class="tool-description">A personalized AI tarot reading tool that provides private insights on life aspects like love and career.</div>
+          <a href="https://www.tarota.ai/" class="tool-link" target="_blank">Visit Tool</a>
+        </div>
+        
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-name">BackGroundRemove.io</div>
+            <div class="tool-rating">★ 5</div>
+          </div>
+          <div class="tool-category">Image editing</div>
+          <div class="tool-description">Quickly erases image backgrounds using AI. It automatically creates transparent backgrounds.</div>
+          <a href="https://backgroundremove.io/" class="tool-link" target="_blank">Visit Tool</a>
+        </div>
+        
+        <div class="tool-card">
+          <div class="tool-header">
+            <div class="tool-name">Image Translator.com</div>
+            <div class="tool-rating">★ 3.8</div>
+          </div>
+          <div class="tool-category">Images</div>
+          <div class="tool-description">An AI tool that translates text in images while maintaining the original layout and formatting.</div>
+          <a href="https://imagetranslator.com/" class="tool-link" target="_blank">Visit Tool</a>
+        </div>
+      </div>
+    </section>
 
     <section>
       <h2>Top directories and repos</h2>
